@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Result</title>
+  <style>
+    /* Add your CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #C3AAF9;
+      margin: 20px;
+    }
+
+    h1 {
+      background: linear-gradient(45deg, white, black, silver, black);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .result-container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .email-draft {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #6B3ECC;
+      border-radius: 8px;
+      background-color: #E0D6FF;
+    }
+  </style>
+</head>
+<body>
+  <h1>Event Result</h1>
+  <div class="result-container">
+    <p>{{ response }}</p>
+    <div class="email-draft">
+      <p>{{ email_draft }}</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COPILOT</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f5f5f5; /* Grey background */
+      text-align:center;
+      margin: 0; /* Remove default body margin */
+      padding: 0; /* Remove default body padding */
+    }
+
+    header {
+      margin:0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: white; /* Grey header background */
+    }
+
+    header img {
+      height: 80px; /* Adjust logo size as needed */
+      margin-left: 30px;
+      border-radius:50px;
+      
+    }
+
+  h1{
+    padding:60px;
+    font-size:60px;
+    max-width: 800px; /* Adjust max-width as needed */
+    margin: 0 auto;
+    
+  }
+
+    h1 span {
+      background: linear-gradient(45deg, #6B3ECC, #8250CC, #9763CC, #AB75CC);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    p {
+      margin-top: 0;
+      color: #000; /* Black for description */
+      max-width: 700px; /* Adjust max-width as needed */
+      margin: 0 auto;
+      margin-bottom: 5px; /* Adjust padding-bottom for the desired gap between lines */
+    }
+
+    a {
+      /* Button styles remain the same */
+      text-decoration: none;
+      display: inline-block;
+      margin-right: 20px; /* Add spacing between buttons */
+      padding: 10px 20px;
+      border: 1px solid #6B3ECC;
+      border-radius: 25px;
+      background-color:#6B3ECC ;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+      margin-bottom: 10px;
+    }
+
+    a:hover {
+      background-color: #6B3ECC;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="data:image/jpeg;base64,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" alt="Event Copilot Logo">
+    
+    <div>
+      <a href="/login">Sign In</a>
+      <a href="/signup_page">Create Account</a>
+    </div>
+  </header>
+
+  <h1><span> Copilot </span> for Corporate Event Planning </h1>
+<p>
+Copilot serves as your invaluable AI partner</p>
+  <p>diligently simplifying the intricacies of corporate event management. Imagine a seamless process</p><p> where our AI effortlessly communicates with event venues, utilizing both email and phone</p><p> interactions to ascertain availability. It goes beyond the ordinary by deftly handling intricate</p><p> negotiations, streamlining the back-and-forth complexities.</p>
+</body>
+</html>

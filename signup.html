@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>AI Corporate Event Planner - Sign Up</title>
+ <style>
+  /* Global styles */
+  body {
+   font-family: 'Arial', sans-serif;
+   background-color: #f8f8f8;
+   margin: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   overflow: hidden; /* Remove movable slider */ */
+  }
+
+  /* Container */
+  .container {
+   width: 400px;
+   padding: 30px;
+   border-radius: 8px;
+   background-color: #fff;
+   align-items: center; /* Center content horizontally */
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   overflow-y: auto; /* Add scrollbar if content overflows */
+  }
+
+  /* Header */
+  .header {
+   text-align: center;
+   margin-bottom: 20px;
+  }
+
+  h1 {
+   font-size: 36px;
+   color: #333;
+   letter-spacing: 2px;
+  }
+
+  /* Signup form */
+  .signup-form {
+   padding-top: 20px;
+  }
+
+  label {
+   display: block;
+   margin-bottom: 8px;
+   color: #555;
+   font-size: 14px;
+  }
+
+  input[type="text"], input[type="email"], input[type="tel"], input[type="password"], textarea {
+   width: calc(100% - 30px); /* Adjusted width */
+   padding: 10px;
+   margin-bottom: 12px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   box-sizing: border-box;
+   font-size: 16px;
+  }
+
+  input[type="submit"] {
+   margin: 0 auto; /* Center the submit button */
+   display: block;
+   width: 50%;
+   padding: 12px;
+   background-color: #6B3ECC;
+   color: #fff;
+   border: 1px solid #6B3ECC;
+
+   border-radius: 25px; /* Rounded corners */
+   cursor: pointer;
+   font-size: 13px;
+   transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(107, 62, 204, 0.3);/* Added box-shadow */
+
+  }
+
+  input[type="submit"]:hover {
+   background-color: #6B3ECC;
+  }
+
+  /* Login link */
+  a {
+   display: block;
+   text-align: center;
+   color: #6B3ECC;
+   text-decoration: none;
+   margin-top: 15px;
+   font-size: 14px;
+  }
+ </style>
+</head>
+<body>
+ <div class="container">
+  <div class="header">
+  </div>
+  <div class="signup-form">
+   <form action="/signup" method="post">
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name" required>
+
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+
+    <input type="submit" value="Submit">
+   </form>
+
+    <a href='/login'>Already have a account?</a>
+
+  </div>
+ </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>An Event Copilot - Login</title>
+  <style>
+    /* Global styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #C3AAF9;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden; /* Remove movable slider */
+    }
+
+    /* Login box */
+    .login-box {
+      width: 400px;
+      padding: 30px;
+      margin: 100px auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Login title */
+    .login-title {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .login-title h1 {
+      display: inline-block;
+      font-size: 30px;
+      margin: 0;
+      background: linear-gradient(45deg, #C9886E, #D59F7C, #E1B590, #ECCBA3);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-family: sans-serif;
+    }
+
+    /* Login form */
+    .login-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label {
+      margin-bottom: 10px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      width: calc(100% - 50px); /* Adjusted width */
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-sizing: border-box;
+      font-size: 12px;
+    }
+
+    /* Login button */
+    .login-button {
+      margin: 0 auto; /* Center the submit button */
+      display: block;
+      width: 40%;
+      padding: 12px;
+      background-color: #6B3ECC;
+      color: #fff;
+      border: 1px solid #6B3ECC;
+      border-radius: 25px; /* Rounded corners */
+      cursor: pointer;
+      font-size: 13px;
+      transition: background-color 0.3s;
+      box-shadow: 0 4px 8px rgba(107, 62, 204, 0.3);
+    }
+
+    .login-button:hover {
+      background-color: #6B3ECC;
+    }
+
+    /* Forgot password link */
+    .forgot-password {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    a {
+      color: #6B3ECC;
+      text-decoration: none;
+    }
+
+    /* Image container */
+    .image-container {
+      text-align: center;
+    }
+
+    img {
+      width: 100px; /* Adjust the width of the image */
+      border-radius: 50%; /* Make it round */
+    }
+
+    .small-text {
+      font-weight: bold;
+      color: #6B3ECC; /* Purple color */
+      font-size: 18px; /* Adjust font size */
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <br>
+
+    <div class="login-title">
+      <h1>FORGOT PASSWORD</h1>
+    </div>
+    <br>
+
+
+    <form class="login-form" action="/forgot_email" method="post">
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Your email" required>
+
+
+      <input type="submit" class="login-button" value="Recover Password">
+
+      <div class="forgot-password">
+        <a href="/login">Login</a>
+      </div>
+    </form>
+  </div>
+
+
+</body>
+</html>
